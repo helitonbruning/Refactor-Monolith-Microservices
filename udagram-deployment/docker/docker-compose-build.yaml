@@ -3,16 +3,16 @@ services:
   reverseproxy:
     build:
       context: .
-    image: helhamaky/reverseproxy 
+    image: helitonbruning/reverseproxy 
   backend_user:
     build:
-      context: ../../udacity-c3-restapi-user
-    image: helhamaky/udacity-restapi-user
+      context: ../../udagram-api-feed
+    image: helitonbruning/udagram-api-feed
   backend_feed:
     build:
-      context: ../../udacity-c3-restapi-feed  
-    image: helhamaky/udacity-restapi-feed
+      context: ../../udagram-api-users
+    image: helitonbruning/udagram-api-users
   frontend:
     build:
-      context: ../../udacity-c3-frontend  
-    image: helhamaky/udacity-frontend:local
+      context: ../../udagram-frontend
+    image: helitonbruning/udagram-frontend
