@@ -6,12 +6,12 @@ services:
     image: helitonbruning/reverseproxy 
   backend_user:
     build:
-      context: ../../udagram-api-feed
-    image: helitonbruning/udagram-api-feed
-  backend_feed:
-    build:
       context: ../../udagram-api-users
     image: helitonbruning/udagram-api-users
+  backend_feed:
+    build:
+      context: ../../udagram-api-feed
+    image: helitonbruning/udagram-api-feed
   frontend:
     build:
       context: ../../udagram-frontend
