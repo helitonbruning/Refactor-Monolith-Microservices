@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: udagram-moka-dev
+  AWS_BUCKET: udagram-bruning-dev
   AWS_PROFILE: default
-  AWS_REGION: us-east-1
+  AWS_REGION: us-east-2
   JWT_SECRET: helloworld
   POSTGRESS_DB: udagrammokadev
   POSTGRESS_HOST: udagrammokadev.c9lkpizycpvl.us-east-1.rds.amazonaws.com
